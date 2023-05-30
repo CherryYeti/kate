@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://use.fontawesome.com/releases/v5.0.1/css/all.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  transition: 300ms ease-in-out;
+  scroll-behavior: smooth;
+}
+
+.hero {
+  height: 100vh;
+  background: #151515 url(img/kb.jpeg) no-repeat center bottom;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.heroOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(17, 17, 17, 0.85);
+}
+
+.heroContent {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: white;
+  width: 100%;
+}
+
+.heroContent h2 {
+  color: #fd7f20;
+  font-size: 2rem;
+}
+
+.heroContent h1 {
+  font-size: 5rem;
+  word-wrap: normal;
+  font-weight: bold;
+}
+
+.heroSub {
+  word-wrap: break-word;
+  font-family: "Lora", serif;
+}
+
+.heroSub span {
+  font-size: 1.5rem;
+  word-wrap: break-word;
+  display: inline-block;
+}
+
+.heroSub span:first-child::before {
+  content: "|";
+  text-align: center;
+  display: inline-block;
+  padding: 0 14px 0 8px;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.heroSub span::after {
+  content: "|";
+  text-align: center;
+  display: inline-block;
+  padding: 0 8px 0 14px;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.hero button {
+  font-weight: bold;
+  margin-top: 40px;
+  color: #ffffff;
+  border: 3px solid #313131;
+  border-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(0, 0, 0, 0);
+  padding: 20px;
+  letter-spacing: 0.25rem;
+  cursor: pointer;
+}
+
+.hero button:hover {
+  border-color: #fd7f20;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding-top: 8rem;
+}
+
+.header h3 {
+  color: black;
+  font-size: 2.5rem;
+}
+
+.header h4 {
+  color: #fd7f20;
+  font-size: 1.5rem;
+}
+
+.header h5 {
+  color: gray;
+  font-size: 1.5rem;
+}
+
+.picture {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  margin-left: 15%;
+  margin-top: 3rem;
+}
+
+.skills {
+  display: flex;
+  width: 70%;
+  margin-left: 15%;
+  justify-content: center;
+  text-align: left;
+}
+
+.skillSection {
+  margin-left: 0;
+  width: 50%;
+}
+
+.skillSection .titleContainer {
+  margin-bottom: 2rem;
+}
+
+.skillSection .title {
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-top: 1rem;
+}
+
+.skill {
+  margin-bottom: 2.25rem;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.skill > p {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a1716;
+  margin: 0;
+}
+
+.skill:before {
+  width: 100%;
+  height: 10px;
+  content: "";
+  display: block;
+  position: absolute;
+  background: #959595;
+  border: 0px;
+  bottom: 0;
+}
+
+.skill-bar {
+  width: 100%;
+  height: 10px;
+  background: #313131;
+  display: block;
+  position: relative;
+}
+
+.skill-bar span {
+  position: absolute;
+  top: -30px;
+  padding: 0;
+  font-size: 18px;
+  padding: 3px 0;
+  font-weight: 500;
+}
+
+.skill-bar {
+  position: relative;
+}
+
+.skill1 {
+  width: 95%;
+}
+
+.skill2 {
+  width: 90%;
+}
+
+.skill3 {
+  width: 85%;
+}
+
+.skill4 {
+  width: 90%;
+}
+
+.skill5 {
+  width: 80%;
+}
+
+.skill-count {
+  right: 0;
+}
+
+.history {
+  background-color: #ebebeb;
+}
+
+@media (max-width: 480px) {
+  .heroSub span {
+    display: grid;
+  }
+
+  .heroSub span:first-child::before {
+    content: "";
+  }
+
+  .heroSub span::after {
+    content: "";
+  }
+}
+
+@media (max-width: 768px) {
+  .skills {
+    flex-direction: column;
+  }
+
+  .skillSection {
+    width: 100%;
+  }
+
+  .titleContainer {
+    text-align: center;
+  }
+
+  .heroContent h1 {
+    font-size: 3rem;
+  }
+
+  .heroContent h2 {
+    font-size: 1.5rem;
+  }
+
+  .heroContent span {
+    font-size: 1.25rem;
+  }
+
+  .heroSub {
+    text-align: center;
+  }
+}
+
+#gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 15%;
+  width: 70%;
+  justify-content: center;
+  padding-bottom: 80px;
+}
+
+.column {
+  flex: 49%;
+  max-width: 49%;
+}
+
+.column img {
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.contact .header a {
+  color: #fd7f20;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.footer {
+  background-color: #151515;
+  color: white;
+  width: 100%;
+  text-align: center;
+  margin-top: 2rem;
+  padding: 3rem;
+}

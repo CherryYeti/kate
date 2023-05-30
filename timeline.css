@@ -1,0 +1,141 @@
+.timeline {
+  position: relative;
+  padding-left: 4rem;
+  margin: 0 0 0 30px;
+  color: black;
+  padding-bottom: 3rem;
+}
+
+.timeline ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 1em;
+}
+
+.timeline li:before {
+  display: inline-block;
+  content: "-";
+  width: 1em;
+  margin-left: -1em;
+}
+
+.timeline:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background: #27293d;
+}
+
+.timeline .timeline-container {
+  position: relative;
+  margin-bottom: 2.5rem;
+}
+
+.timeline .timeline-container .timeline-icon {
+  position: absolute;
+  left: -88px;
+  top: 4px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.timeline .timeline-container .timeline-icon i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.timeline .timeline-container .timeline-icon img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.timeline .timeline-container .timeline-body {
+  border-radius: 3px;
+  padding: 20px 20px 15px;
+  box-shadow: 1px 3px 9px rgba(0, 0, 0, 0.1);
+}
+
+.timeline .timeline-container .timeline-body:before {
+  content: "";
+  background: inherit;
+  width: 20px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  left: -10px;
+  transform: rotate(45deg);
+  border-radius: 0 0 0 2px;
+}
+
+.timeline .timeline-container .timeline-body .timeline-title {
+  margin-bottom: 1.4rem;
+}
+
+.timeline .timeline-container .timeline-body .timeline-title .badge {
+  background: #4f537b;
+  padding: 4px 8px;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.timeline .timeline-container .timeline-body .timeline-subtitle {
+  font-weight: 300;
+  font-style: italic;
+  opacity: 0.4;
+  margin-top: 16px;
+  font-size: 11px;
+}
+
+.timeline .timeline-container.botw .badge {
+  background: #007f51 !important;
+  color: white !important;
+}
+
+.timeline .timeline-container.fargo .badge {
+  background: #d71d28 !important;
+  color: white !important;
+}
+
+.timeline .timeline-container.ufr .badge {
+  background: #d5d1b5 !important;
+}
+
+.timeline .timeline-container.uci .badge {
+  background: #1565a6 !important;
+  color: white !important;
+}
+.timeline .timeline-container.ucr .timeline-icon {
+  background: white;
+}
+.timeline .timeline-container.ucr .badge {
+  background: #003ba6 !important;
+  color: white !important;
+}
+.timeline .timeline-container.ggu .badge {
+  background: #003468 !important;
+  color: white !important;
+}
+.timeline .timeline-container.oregon .timeline-icon {
+  background: white;
+}
+.timeline .timeline-container.oregon .badge {
+  background: #0b6f54 !important;
+  color: white;
+}
+.timeline .timeline-container.rcc .badge {
+  background: #000000 !important;
+  color: white;
+}
+.breaker {
+  padding-top: 0;
+}
