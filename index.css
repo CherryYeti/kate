@@ -124,6 +124,10 @@
   margin-left: 15%;
   margin-top: 3rem;
 }
+.picturecontainer {
+  display: flex;
+  justify-content: center;
+}
 
 .skills {
   display: flex;
@@ -247,6 +251,9 @@
   .titleContainer {
     text-align: center;
   }
+  .picture{
+    margin-left: 0  ;
+    }
 
   .heroContent h1 {
     font-size: 3rem;
