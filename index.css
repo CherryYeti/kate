@@ -1,3 +1,11 @@
+:root {
+  --font-primary: "Poppins", sans-serif;
+  --font-secondary: "Lora", serif;
+  --primary-color: #bf330d;
+  --secondary-color: #313131;
+  --background-color: #151515;
+  --overlay-color: rgba(17, 17, 17, 0.85);
+}
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap");
 @import url("https://use.fontawesome.com/releases/v5.0.1/css/all.css");
 
@@ -12,7 +20,7 @@
 
 .hero {
   height: 100vh;
-  background: #151515 url(img/kb.webp) no-repeat center bottom;
+  background: var(--secondary-color) url(img/kb.webp) no-repeat center bottom;
   background-size: cover;
   background-attachment: fixed;
   width: 100%;
@@ -41,7 +49,7 @@
 }
 
 .heroContent h2 {
-  color: #fd7f20;
+  color: var(--primary-color);
   font-size: 2rem;
 }
 
@@ -82,7 +90,7 @@
   font-weight: bold;
   margin-top: 40px;
   color: #ffffff;
-  border: 3px solid #313131;
+  border: 3px solid var(--secondary-color);
   border-color: rgba(255, 255, 255, 0.3);
   background-color: rgba(0, 0, 0, 0);
   padding: 20px;
@@ -91,7 +99,7 @@
 }
 
 .hero button:hover {
-  border-color: #fd7f20;
+  border-color: var(--primary-color);
 }
 
 .header {
@@ -108,7 +116,7 @@
 }
 
 .header h4 {
-  color: #fd7f20;
+  color: var(--primary-color);
   font-size: 1.5rem;
 }
 
@@ -149,7 +157,7 @@
 .skillSection .title {
   font-weight: bold;
   font-size: 1.25rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 .skill {
@@ -179,7 +187,7 @@
 .skill-bar {
   width: 100%;
   height: 10px;
-  background: #313131;
+  background: var(--secondary-color);
   display: block;
   position: relative;
 }
@@ -251,9 +259,9 @@
   .titleContainer {
     text-align: center;
   }
-  .picture{
-    margin-left: 0  ;
-    }
+  .picture {
+    margin-left: 0;
+  }
 
   .heroContent h1 {
     font-size: 3rem;
@@ -305,13 +313,13 @@
 }
 
 .contact .header a {
-  color: #fd7f20;
-  font-size: 3rem;
+  color: var(--primary-color);
+  font-size: 2rem;
   font-weight: bold;
 }
 
 .footer {
-  background-color: #151515;
+  background-color: var(--secondary-color);
   color: white;
   width: 100%;
   text-align: center;
